@@ -10,3 +10,17 @@
   margin-bottom: 25px;
   text-align: center;
 }
+
+@media screen and (max-width: 800px) {
+  .category-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+    row-gap: 30px;
+  }
+
+  .category-page-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}

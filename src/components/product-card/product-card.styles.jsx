@@ -19,6 +19,14 @@ export const ProductCartContainer = styled.div`
     position: absolute;
     top: 255px;
     display: none;
+    font-family: "Open Sans", sans-serif;
+
+    @media screen and (max-width: 800px) {
+      position: absolute;
+      top: 60%;
+      font-size: 0.5rem;
+      display: block;
+    }
   }
   &:hover {
     img {
@@ -27,6 +35,19 @@ export const ProductCartContainer = styled.div`
     button {
       opacity: 0.85;
       display: flex;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    height: 200px;
+
+    &:hover {
+      img {
+        opacity: unset;
+      }
+      button {
+        opacity: unset;
+      }
     }
   }
 `;
@@ -42,8 +63,15 @@ export const Footer = styled.div`
 export const Name = styled.span`
   width: 90%;
   margin-bottom: 15px;
+
+  @media screen and (max-width: 800px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const Price = styled.span`
   width: 10%;
+  @media screen and (max-width: 800px) {
+    font-size: 0.8rem;
+  }
 `;
