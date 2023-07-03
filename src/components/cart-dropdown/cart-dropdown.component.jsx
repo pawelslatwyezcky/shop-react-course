@@ -1,22 +1,22 @@
-import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
-import Button from "../button/button.component";
-import CartItem from "../cart-item/cart-item.component";
-import { selectCartItems } from "../../store/cart/cart.selector";
+import Button, { BUTTON_TYPE_CLASSES } from '../button/button.component';
+import CartItem from '../cart-item/cart-item.component';
+import { selectCartItems } from '../../store/cart/cart.selector';
 
 import {
   CartDropdownContainer,
   EmptyMessage,
   CartItems,
-} from "./cart-dropdown.styles";
+} from './cart-dropdown.styles';
 
 const CartDropdown = () => {
   const cartItems = useSelector(selectCartItems);
   const navigate = useNavigate();
 
   const goToCheckoutHandler = () => {
-    navigate("/checkout");
+    navigate('/checkout');
   };
 
   return (
@@ -28,7 +28,12 @@ const CartDropdown = () => {
           <EmptyMessage>Your cart is empty</EmptyMessage>
         )}
       </CartItems>
-      <Button onClick={goToCheckoutHandler}>GO TO CHECKOUT</Button>
+      <Button
+        onClick={goToCheckoutHandler}
+        buttonType={BUTTON_TYPE_CLASSES.base}
+      >
+        GO TO CHECKOUT
+      </Button>
     </CartDropdownContainer>
   );
 };
