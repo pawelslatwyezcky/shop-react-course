@@ -1,6 +1,6 @@
 # ONLINE SHOP
 
-![Sore Homepage](https://github.com/pawelslatwyezcky/shop-react-course/blob/main/SHOP_HOMEPAGE.png?raw=true)
+![Store Homepage](https://github.com/pawelslatwyezcky/shop-react-course/blob/main/SHOP_HOMEPAGE.png?raw=true)
 
 This project was build during the React Developer Course on Udemy.com.
 It provides basic functionality of exploring categories, adding items to cart, payment with Stripe, authentication, and data stored in Firebase.
